@@ -1,7 +1,12 @@
 import React from 'react';
-
-const App = (props) => (
-  <div>Hello World!</div>
-);
+import Title from '../components/Title.jsx';
+import MovieList from '../components/MovieList.jsx'
+const App = ({ movies }) => {
+  return (
+    <div >
+      <Title />
+      <MovieList movies={ movies }/>
+    </div>
+)};
 
 export default App;
