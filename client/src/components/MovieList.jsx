@@ -7,6 +7,7 @@ const MovieList = ({ movieList }) => {
   return (
   <ul className="movielist">
     {movielist}
+    <div className="no-results-message">{ movieList.length === 0 ? "No movies found 🍿 " : "" }</div>
   </ul>
   );
 };

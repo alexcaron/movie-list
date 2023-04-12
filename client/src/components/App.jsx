@@ -8,7 +8,7 @@ const App = ({ movies }) => {
   return (
     <div >
       <Title />
-      <Search allMovies={ allMovies } updateMovieList={ setMovieList } />
+      <Search allMovies={ allMovies } movieList={ movieList } updateMovieList={ setMovieList } />
       <MovieList movieList={ movieList }/>
     </div>
 )};

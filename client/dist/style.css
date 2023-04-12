@@ -40,3 +40,8 @@ h1.title {
   border: 1px solid gray;
   width: auto;
 }
+
+.no-results-message {
+  padding: 15px;
+  padding-left: 30px;
+}
