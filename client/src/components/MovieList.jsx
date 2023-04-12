@@ -1,7 +1,7 @@
 import React from 'react';
 
-const MovieList = ({ movies }) => {
-  const movielist = movies.map((movie) =>
+const MovieList = ({ movieList }) => {
+  const movielist = movieList.map((movie) =>
     <li key={ movie.id } className="movielist-item">{ movie.title }</li>
   );
   return (
