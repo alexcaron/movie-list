@@ -16,19 +16,28 @@ h1 {
 
 h1.title {
   padding: 10px;
+  padding-left: 20px;
   border: 1px solid gray;
   margin-top: 0;
   background-color:lightgrey;
 }
+
+.search-bar {
+  padding-left: 30px;
+  padding-top: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+
 .movielist {
   padding-inline-start: 0;
+  padding: 0 30px 30px 30px;
 }
 
 .movielist-item {
   list-style-type: none;
   padding: 10px;
+  padding-left: 30px;
   border: 1px solid gray;
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  width: auto;
 }
