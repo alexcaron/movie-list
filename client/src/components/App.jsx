@@ -1,7 +1,6 @@
 import React from 'react';
 import Title from '../components/Title.jsx';
-import MovieList from '../components/MovieList.jsx'
-import Search from '../components/Search.jsx'
+import MovieListDisplayer from '../components/MovieListDisplayer.jsx';
 import AddBar from '../components/AddBar.jsx'
 
 const App = () => {
@@ -11,8 +10,7 @@ const App = () => {
     <div >
       <Title />
       <AddBar allMovies={ allMovies } setAllMovies={ setAllMovies } updateMovieList ={ setMovieList }/>
-      <Search allMovies={ allMovies } updateMovieList={ setMovieList } />
-      <MovieList allMovies={ allMovies } movieList={ movieList } setAllMovies={ setAllMovies }/>
+      <MovieListDisplayer allMovies={ allMovies } movieList={ movieList } setAllMovies={ setAllMovies } updateMovieList={ setMovieList } />
     </div>
 )};
 

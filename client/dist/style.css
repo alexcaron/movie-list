@@ -10,6 +10,7 @@ h1 {
 
 #app {
   border: 1px solid gray;
+  border-radius: 2px;
   margin: 5px;
 }
 
@@ -17,6 +18,7 @@ h1.title {
   padding: 10px;
   padding-left: 20px;
   border: 1px solid gray;
+  border-radius: 2px;
   margin-top: 0;
   background-color:lightgray;
 }
@@ -33,8 +35,11 @@ h1.title {
 }
 
 .search-bar {
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  flex-grow: 2;
+}
+#search {
+  width: 300px;
 }
 
 .movielist {
@@ -47,6 +52,7 @@ h1.title {
   padding: 15px;
   padding-left: 30px;
   border: 1px solid gray;
+  border-radius: 2px;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -78,4 +84,38 @@ h1.title {
 .movielist-item-toggle-not-watched {
   background-color: lightgray;
   color: black;
+}
+
+#watched-tab, #to-watch-tab {
+  border-radius: 2px;
+  margin: 0px;
+  border: 1px solid gray;
+}
+
+.movie-list-controls {
+  padding-inline-start: 0;
+  padding: 30px 30px 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#watched-tab.not-selected {
+  background: lightgray;
+}
+
+#watched-tab.selected {
+  background-color: #37a437;
+  color: white;
+  font-weight: bold;
+}
+
+#to-watch-tab.not-selected {
+  background: lightgray;
+}
+
+#to-watch-tab.selected {
+  background: darkslategray;
+  color: white;
+  font-weight:bold;
 }
