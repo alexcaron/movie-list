@@ -34,6 +34,7 @@ h1.title {
 
 .search-bar {
   padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .movielist {
@@ -47,6 +48,9 @@ h1.title {
   padding-left: 30px;
   border: 1px solid gray;
   width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .no-results-message {
@@ -56,4 +60,11 @@ h1.title {
 
 #movie-to-add {
   width: 50%;
+}
+
+.movielist-item-toggle-is-watched {
+  font-size: smaller;
+  margin: 0px;
+  padding: 3px;
+  width: 100px;
 }

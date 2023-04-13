@@ -1,14 +1,15 @@
 import React from 'react';
+import MovieListItem from '../components/MovieListItem.jsx'
 
 const MovieList = ({ allMovies, movieList }) => {
   const movielist = movieList.map((movie) =>
-    <li key={ movie.id } className="movielist-item">{ movie.title + " - watched yet? " + ((movie.isWatched) ? 'Yup.' : 'Nope.') }</li>
+    <MovieListItem movie={ movie } />
   );
   return (
-  <ul className="movielist">
+  <div className="movielist">
     {movielist}
     <div className="no-results-message">{ movieList.length === 0 ? "No movies found 🍿" : "" }</div>
-  </ul>
+  </div>
   );
 };
 
