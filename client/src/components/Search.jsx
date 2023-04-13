@@ -10,8 +10,8 @@ const Search = ({ allMovies, updateMovieList }) => {
   }
   return (
     <div className="search-bar">
-      <input type="search" id="search" placeholder="Type a title..." />
-      <button onClick={ searchBehavior }>Search</button>
+      <input type="search" id="search" placeholder="Search for a movie..." />
+      <button onClick={ searchBehavior }>Go</button>
     </div>
   );
 };

@@ -18,14 +18,22 @@ h1.title {
   padding-left: 20px;
   border: 1px solid gray;
   margin-top: 0;
-  background-color:lightgrey;
+  background-color:lightgray;
 }
 
-.search-bar {
+.search-bar, .add-bar {
   padding-left: 30px;
   padding-top: 30px;
   display: flex;
   align-items: flex-start;
+}
+
+.add-bar {
+  padding-top: 30px;
+}
+
+.search-bar {
+  padding-top: 10px;
 }
 
 .movielist {
@@ -44,4 +52,8 @@ h1.title {
 .no-results-message {
   padding: 15px;
   padding-left: 30px;
+}
+
+#movie-to-add {
+  width: 50%;
 }
