@@ -7,6 +7,7 @@ const AddBar = ({ allMovies, setAllMovies, updateMovieList }) => {
     var newMovieArray = [{title: title, id: movieId}].concat(allMovies);
     setAllMovies(newMovieArray);
     updateMovieList(newMovieArray);
+    document.getElementById('movie-to-add').value = '';
     document.getElementById('search').value = '';
   }
   return (

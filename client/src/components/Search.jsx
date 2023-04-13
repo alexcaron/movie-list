@@ -3,7 +3,6 @@ import React from 'react';
 const Search = ({ allMovies, updateMovieList }) => {
   const searchBehavior = () => {
     var query = document.getElementById('search').value.toLowerCase();
-    console.log(allMovies);
     var results = allMovies.filter((movie) => movie.title.toLowerCase().includes(query));
     updateMovieList(results);
   }
