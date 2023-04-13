@@ -1,15 +1,13 @@
 import React from 'react';
 
-const AddBar = ({ allMovies, setAllMovies }) => {
+const AddBar = ({ allMovies, setAllMovies, updateMovieList }) => {
   const addBehavior = () => {
     var title = document.getElementById('movie-to-add').value;
     var movieId = allMovies.length + 1;
     var newMovieArray = [{title: title, id: movieId}].concat(allMovies);
     setAllMovies(newMovieArray);
-    // console.log(query);
-    // var results = allMovies.filter((movie) => movie.title.toLowerCase().includes(query));
-    // console.log(results);
-    // updateMovieList(results);
+    updateMovieList(newMovieArray);
+    document.getElementById('search').value = '';
   }
   return (
     <div className="add-bar">

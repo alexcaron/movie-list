@@ -4,15 +4,23 @@ import MovieList from '../components/MovieList.jsx'
 import Search from '../components/Search.jsx'
 import AddBar from '../components/AddBar.jsx'
 
-const App = ({ movies }) => {
+const movieData = [
+  {title: 'Mean Girls', id: 0},
+  {title: 'Hackers', id: 1},
+  {title: 'The Grey', id: 2},
+  {title: 'Sunshine', id: 3},
+  {title: 'Ex Machina', id: 4},
+];
+
+const App = () => {
   const [allMovies, setAllMovies] = React.useState([]);
-  const [movieList, setMovieList] = React.useState(movies);
+  const [movieList, setMovieList] = React.useState([]);
   return (
     <div >
       <Title />
-      <AddBar allMovies={ allMovies } setAllMovies={ setAllMovies } />
-      <Search allMovies={ allMovies } movieList={ movieList } updateMovieList={ setMovieList } />
-      <MovieList movieList={ movieList }/>
+      <AddBar allMovies={ allMovies } setAllMovies={ setAllMovies } updateMovieList ={ setMovieList }/>
+      <Search allMovies={ allMovies } updateMovieList={ setMovieList } />
+      <MovieList allMovies={ allMovies } movieList={ movieList } />
     </div>
 )};
 
