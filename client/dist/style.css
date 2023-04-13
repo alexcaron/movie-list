@@ -62,9 +62,20 @@ h1.title {
   width: 50%;
 }
 
-.movielist-item-toggle-is-watched {
+.movielist-item-toggle-watched, .movielist-item-toggle-not-watched {
   font-size: smaller;
   margin: 0px;
   padding: 3px;
   width: 100px;
+}
+
+.movielist-item-toggle-watched {
+  background-color: #37a437;
+  color: white;
+  font-weight: bold;
+}
+
+.movielist-item-toggle-not-watched {
+  background-color: lightgray;
+  color: black;
 }

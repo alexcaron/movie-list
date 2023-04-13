@@ -12,7 +12,7 @@ const App = () => {
       <Title />
       <AddBar allMovies={ allMovies } setAllMovies={ setAllMovies } updateMovieList ={ setMovieList }/>
       <Search allMovies={ allMovies } updateMovieList={ setMovieList } />
-      <MovieList allMovies={ allMovies } movieList={ movieList } />
+      <MovieList allMovies={ allMovies } movieList={ movieList } setAllMovies={ setAllMovies }/>
     </div>
 )};
 

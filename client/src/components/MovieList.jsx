@@ -1,9 +1,9 @@
 import React from 'react';
 import MovieListItem from '../components/MovieListItem.jsx'
 
-const MovieList = ({ allMovies, movieList }) => {
+const MovieList = ({ allMovies, movieList, setAllMovies }) => {
   const movielist = movieList.map((movie) =>
-    <MovieListItem movie={ movie } />
+    <MovieListItem key={ movie.id } movie={ movie } allMovies={ allMovies } setAllMovies={ setAllMovies }/>
   );
   return (
   <div className="movielist">
